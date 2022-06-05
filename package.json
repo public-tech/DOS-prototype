@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/public-tech/publics-prototyping-kit/issues"
   },
-  "homepage": "https://github.com/public-tech/publics-prototyping-kit#readme"
+  "homepage": "https://github.com/public-tech/publics-prototyping-kit#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  }
 }
