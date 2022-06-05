@@ -1,29 +1,20 @@
 {
   "name": "publics-prototyping-kit",
-  "version": "1.0.0",
-  "description": "Publics prototyping toolkit",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "test"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/public-tech/publics-prototyping-kit.git"
+  "dependencies": {
+    "next": "12.1.6",
+    "react": "18.1.0",
+    "react-dom": "18.1.0"
   },
-  "keywords": [
-    "node",
-    "express",
-    "jest",
-    "tailwindcss",
-    "prototyping"
-  ],
-  "author": "Steven Wilson",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/public-tech/publics-prototyping-kit/issues"
-  },
-  "homepage": "https://github.com/public-tech/publics-prototyping-kit#readme",
   "devDependencies": {
-    "tailwindcss": "^3.0.24"
+    "eslint": "8.17.0",
+    "eslint-config-next": "12.1.6"
   }
 }
