@@ -1,2 +1,3 @@
-# public-prototyping-kit
+# Public's prototyping toolkit
+
 Public's prototyping kit
