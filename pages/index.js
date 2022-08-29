@@ -40,11 +40,16 @@ export default function Home() {
         <meta name="description" content="Prototype app" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
+      <main className=''>
         <div className="container mx-auto">
         <form action="#" method="POST">
           <div className="overflow-hidden">
+          <h1 className="p-5 text-6xl font-semibold">DOS prototype app</h1>
+          <p className="p-5" >A prototype of an application that automates answering DOS questions using ML, NLP and AI.</p>
+
             <div className="bg-white p-5">
+
+              
               
             <EssentialExperience
             caseStudyIsLoaded={caseStudyIsLoaded}
