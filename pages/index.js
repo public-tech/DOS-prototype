@@ -23,7 +23,10 @@ export default function Home() {
           selectedCaseStudy={selectedCaseStudy}
           setSelectedCaseStudy={setSelectedCaseStudy}
         ></SuggestedCaseStudies>
-        <Themes></Themes>
+        <Themes
+        selectedCaseStudy={selectedCaseStudy}
+        setSelectedCaseStudy={setSelectedCaseStudy}
+        ></Themes>
         <SuggestedAnswer
           selectedCaseStudy={selectedCaseStudy}
           setSelectedCaseStudy={setSelectedCaseStudy}
