@@ -68,16 +68,29 @@ const cssStyles = {
 } 
 
 export default function EssentialExperience({
+  selectedCaseStudy,
+  setSelectedCaseStudy,
   caseStudyIsLoaded, 
   setCaseStudyIsLoaded, 
   essentialExperience, 
   setEssentialExperience
 }) {
-  
 
   function searchCaseStudies(event) {
     event.preventDefault();
     setCaseStudyIsLoaded(true);
+  }
+
+  function enableSearchButton(event){
+    setEssentialExperience(event.target.value)
+    clearSuggestedAnswerIfEssentialExperienceisEmpty()
+    
+  }
+
+  function clearSuggestedAnswerIfEssentialExperienceisEmpty() {
+    if(!essentialExperience) {
+      setSelectedCaseStudy({ answer: 'No case study selected'})
+    }
   }
 
   return (
@@ -94,7 +107,7 @@ export default function EssentialExperience({
           rows={5}
           className={cssStyles.input.join(' ').toString()}
           placeholder="Enter essential experince"
-          onChange={event => setEssentialExperience(event.target.value)}
+          onChange={enableSearchButton}
         />
       </div>
       <p className="mt-2 text-sm text-gray-500">
@@ -106,7 +119,6 @@ export default function EssentialExperience({
           onClick={searchCaseStudies}
           disabled={!essentialExperience}
           className="disabled:opacity-25 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-
         >
           Search Case Studies
         </button>

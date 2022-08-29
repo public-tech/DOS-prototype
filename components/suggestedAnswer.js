@@ -1,6 +1,12 @@
 import cssStyles from "../config/cssStyles"
 
-export default function SuggestedAnswer({selectedCaseStudy, setSelectedCaseStudy}) {
+export default function SuggestedAnswer({
+  selectedCaseStudy, 
+  setSelectedCaseStudy,
+  essentialExperience, 
+  setEssentialExperience
+}) {
+  
     return (
     <>
       <div className="grid grid-cols-12">

@@ -27,6 +27,8 @@ export default function Home() {
         <SuggestedAnswer
           selectedCaseStudy={selectedCaseStudy}
           setSelectedCaseStudy={setSelectedCaseStudy}
+          essentialExperience={essentialExperience}
+          setEssentialExperience={setEssentialExperience}
         ></SuggestedAnswer>
       </>
       )
@@ -52,6 +54,8 @@ export default function Home() {
               
               
             <EssentialExperience
+            selectedCaseStudy={selectedCaseStudy}
+            setSelectedCaseStudy={setSelectedCaseStudy}
             caseStudyIsLoaded={caseStudyIsLoaded}
             setCaseStudyIsLoaded={setCaseStudyIsLoaded}
             essentialExperience={essentialExperience}
